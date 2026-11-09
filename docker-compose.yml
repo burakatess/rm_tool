@@ -1,0 +1,15 @@
+services:
+  bgd-risk-simulatoru:
+    build: .
+    image: bgd-risk-simulatoru:1.0.0
+    container_name: bgd-risk-simulatoru
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true

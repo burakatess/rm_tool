@@ -1,0 +1,42 @@
+{
+  "name": "bgd-risk-simulatoru",
+  "private": true,
+  "version": "1.0.0",
+  "description": "BGD risk ve kontrol matrisi simülatörü: GRC Excel'lerini içe alır, metodolojiye göre yeniden hesaplar, aynı şablonda dışa verir.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "5.2.5",
+    "@fontsource/ibm-plex-sans": "5.2.5",
+    "@fontsource/ibm-plex-sans-condensed": "5.2.5",
+    "idb-keyval": "6.2.1",
+    "immer": "10.1.1",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "xlsx": "npm:@e965/xlsx@0.20.3",
+    "zustand": "5.0.4"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "6.6.3",
+    "@testing-library/react": "16.3.0",
+    "@testing-library/user-event": "14.6.1",
+    "@types/node": "22.15.3",
+    "@types/react": "19.1.2",
+    "@types/react-dom": "19.1.2",
+    "@vitejs/plugin-react": "4.4.1",
+    "jsdom": "26.1.0",
+    "typescript": "5.8.3",
+    "vite": "6.3.5",
+    "vitest": "3.1.4"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
